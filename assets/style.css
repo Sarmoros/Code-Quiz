@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+header {
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
 
 .site {
     width: 80%;
@@ -13,27 +21,39 @@
     text-align: center;
 }
 
-.site h1 {
+h1 {
     font-size: 40px;
     margin-bottom: 20px;
 }
 
-.quiz h2 {
+h2 {
     font-size: 30px;
 }
 
-#answers button {
+p {
+    font-size: 20px;
+}
+
+button {
     background-color: rgb(85, 40, 85);
     color: white;
     font-size: large;
     padding: 5px;
-    margin-left: -25%;
-    margin-top: 10px;
-    border-radius: 10%;
+    border-radius: 10px;
     border: white;
-    
 }
 
-#answers button:hover {
+.answer-buttons button {
+    margin-top: 10px;
+    margin-left: 25%;
+    display: block;
+    padding: 10px;
+    padding-left: 15px;
+    width: 15%;
+    text-align: left;
+
+}
+
+button:hover {
     background-color: rgb(170, 97, 170);
 }
