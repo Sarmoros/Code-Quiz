@@ -165,10 +165,11 @@ function showFinal() {
   
     localStorage.setItem('scores', JSON.stringify(scores));
 
+    
 
     //var finalTime = highScore; 
     //var highScoreContainer = document.getElementById('High-score-container');
-    highScoreContainer.innerText = displayHighScores();
+    //highScoreContainer.innerText = displayHighScores();
 
     //var submitButton = document.querySelector(".submit");
     //submitButton.addEventListener("click", submitScore);
@@ -176,7 +177,7 @@ function showFinal() {
     var goBackButton = document.querySelector(".go-back"); 
     goBackButton.addEventListener("click", goBack);
 
-
+    displayHighScores()
 
 }
 
@@ -211,7 +212,7 @@ function setScore() {
 
 
 function displayHighScores() {
-    var highScoresListElement = document.getElementById('highScoresList');
+    var highScoresListElement = document.getElementById('high-scores-list');
     highScoresListElement.innerHTML = '';
     var scores = JSON.parse(localStorage.getItem('scores')) || [];
     scores.sort((a, b) => b - a);
