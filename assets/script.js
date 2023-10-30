@@ -203,10 +203,9 @@ function displayHighScores() {
 }
 
 
-
-
 var goBackButton = document.querySelector(".go-back"); 
     goBackButton.addEventListener("click", goBack);
+    
 startButton.addEventListener("click", startQuiz);
 
 
