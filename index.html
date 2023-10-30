@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <div class="high-score">View High scores</div>
+        <div class="view-score">View High scores</div>
         <div class="timer">Time:75</div>
     </header>
 
@@ -34,15 +34,17 @@
     <div class="final hide">
     <div class="results">
         <h2>All done!</h2>
-        <p>Your final score is <span class= "score">0</span></p>
-        <div class="textbox-container">
-            <input type="text" class="textbox" placeholder="Enter your initials...">
+        <p>Your final score is <span class= "final-score">0</span></p>
+        <label for="initials">Enter Initials:</label>
+        <!--<div class="initials">-->
+            <input type="text" class="initials-input" id="initials">
+            <!--<input type="text" class="initials-input" placeholder="Enter your initials...">-->
         <button class= "submit">Submit</button>  
     </div>
 
     <div class="high-score">
         <h2>High scores</h2>
-        <div id="High-score-list"></div>
+        <ul class="high-scores">0</ul>
         <button class="go-back">Go back</button>
         <button class="clear-score">Clear high scores</button>
     </div> 
